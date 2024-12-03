@@ -37,5 +37,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Based on
 
-https://themeforest.net/item/lawhub-lawyer-attorney-agency-wordpress-theme/54824306# lawyer-app
-law
+https://goldenblatt.bold-themes.com/main-demo/home/home-04/
+
+Imunidade tributária
+Solução de conflitos
+Planejamento de estratégias tributárias
+
+Compromisso
+Entusiasmo
+Experiência
+Seus objetivos são nossos objetivos
