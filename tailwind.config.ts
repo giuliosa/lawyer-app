@@ -58,6 +58,15 @@ export default {
             yellow: colors.yellow,
             zinc: colors.zinc,
         },
+        backgroundImage: {
+            'banner-1': "url('/images/banner-1.jpg')",
+            'banner-2': "url('/images/banner-2.jpg')",
+            'banner-3': "url('/images/banner-3.jpg')",
+            'banner-4': "url('/images/banner-4.jpg')",
+            'banner-5': "url('/images/banner-5.jpg')",
+            'banner-6': "url('/images/banner-6.jpg')",
+            'banner-7': "url('/images/banner-7.jpg')",
+        },
         extend: {
             colors: {
                 background: 'hsl(var(--background))',

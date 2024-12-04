@@ -1,11 +1,10 @@
 export default function WelcomeBanner() {
     return (
-        <section className="bg-cello-950 h-screen w-full pb-16 pt-52 font-serif">
+        <section className="bg-banner-2 h-[700px] w-full bg-cover bg-fixed bg-no-repeat pb-16 pt-52 font-serif">
             <div className="container mx-auto">
-                <span className="text-buttered-rum-700 text-2xl font-normal">Full Range</span>
-                <h1 className="my-10 w-96 text-5xl font-normal text-white">Corporate Law Matters</h1>
-                <div className="hover:text-buttered-rum-50 text-buttered-rum-700 flex items-center font-sans text-xl font-normal uppercase transition">
-                    <div className="bg-buttered-rum-700 mr-2 block h-[1px] w-10"></div> <a href="">Veja mais</a>
+                <h1 className="my-10 w-96 text-6xl font-normal text-white">Corporate Law Matters</h1>
+                <div className="flex w-52 items-center justify-center border-2 border-buttered-rum-800 px-5 py-3 font-sans text-lg uppercase text-white transition-colors hover:cursor-pointer hover:bg-buttered-rum-800">
+                    <a href="">Veja mais</a>
                 </div>
             </div>
         </section>
