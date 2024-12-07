@@ -66,6 +66,15 @@ export default {
             'banner-5': "url('/images/banner-5.jpg')",
             'banner-6': "url('/images/banner-6.jpg')",
             'banner-7': "url('/images/banner-7.jpg')",
+            'poster-1': "url('/images/poster-1.jpg')",
+            'poster-2': "url('/images/poster-2.jpg')",
+            'poster-3': "url('/images/poster-3.jpg')",
+            'poster-4': "url('/images/poster-4.jpg')",
+            'poster-5': "url('/images/poster-5.jpg')",
+            'poster-6': "url('/images/poster-6.jpg')",
+            'poster-7': "url('/images/poster-7.jpg')",
+            'poster-8': "url('/images/poster-8.jpg')",
+            'poster-9': "url('/images/poster-9.jpg')",
         },
         extend: {
             colors: {

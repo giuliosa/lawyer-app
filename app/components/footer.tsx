@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Logo from './logo'
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
     return (
@@ -13,8 +15,18 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="font-sans text-sm">
-                        <span className="mb-12">Siga-nos:</span>
-                        <div>3 icones</div>
+                        <span className="mb-2 block">Siga-nos:</span>
+                        <div className="flex flex-row">
+                            <a href="https://facebook.com" target="_blank" className="mx-2">
+                                <FontAwesomeIcon icon={faFacebook} className="w-4 text-buttered-rum-700" />
+                            </a>
+                            <a href="https://instagram.com" target="_blank" className="mx-2">
+                                <FontAwesomeIcon icon={faInstagram} className="w-4 text-buttered-rum-700" />
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" className="mx-2">
+                                <FontAwesomeIcon icon={faLinkedin} className="w-4 text-buttered-rum-700" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>

@@ -1,7 +1,9 @@
+import { faLandmark, IconDefinition } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { twMerge } from 'tailwind-merge'
 
 interface ICardDescriptionProps {
-    icon: string
+    icon: IconDefinition
     title: string
     subTitle: string
     text?: string
@@ -19,7 +21,9 @@ export default function CardDescription({ description }: CardDescriptionProps) {
     return (
         <section className={twMerge('flex', description.reverse ? 'flex-row-reverse' : 'flex-row')}>
             <div className={twMerge('flex w-1/2 flex-col pb-32', description.reverse ? 'items-start' : 'items-end')}>
-                <div className="size-24 bg-buttered-rum-700"></div>
+                <div className="size-24 bg-buttered-rum-700 p-6 text-buttered-rum-50">
+                    <FontAwesomeIcon icon={description.icon} />
+                </div>
                 <span
                     className={twMerge(
                         'text-buttered-rum-700" mb-5 mt-32 px-9 font-serif uppercase',
