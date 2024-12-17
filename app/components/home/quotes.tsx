@@ -29,7 +29,7 @@ export default function Quotes({ quote }: QuoteProps) {
                     </div>
                 </div>
             </div>
-            <div className="w-1/2 bg-zinc-950 bg-center bg-no-repeat"></div>
+            <div className="w-1/2 bg-banner-7 bg-center bg-no-repeat"></div>
         </section>
     )
 }
