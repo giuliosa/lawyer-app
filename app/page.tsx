@@ -1,8 +1,9 @@
-// import Image from "next/image";
-
 import { faLandmark, faScaleBalanced } from '@fortawesome/free-solid-svg-icons'
-import CardDescription, { CardDescriptionProps } from './components/home/card-description'
+import CardDescription from './components/home/card-description'
 import WelcomeBanner from './components/home/welcome-banner'
+import Certifications from './components/home/certifications'
+import FieldsOfExpertise from './components/home/fields-of-expertise'
+import Quotes from './components/home/quotes'
 
 export default function Home() {
     const descriptionCard = {
@@ -23,13 +24,23 @@ export default function Home() {
         imageClass: 'bg-banner-6',
         reverse: true,
     }
+
+    const quote = {
+        title: 'Finally i can get my business running',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel sapien ut nulla vestibulum tincidunt. Vivamus nec posuere mi. ',
+        authorName: 'Anette Flemming',
+        authorType: 'Cliente',
+    }
     return (
-        <section>
+        <>
             <WelcomeBanner />
             <section id="cards">
                 <CardDescription description={descriptionCard} />
                 <CardDescription description={descriptionCard2} />
             </section>
-        </section>
+            <FieldsOfExpertise />
+            <Quotes quote={quote} />
+            <Certifications />
+        </>
     )
 }

@@ -1,13 +1,35 @@
+'use client'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Logo from '../logo'
 import NavigationAnchor from './navigation-anchor'
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useEffect, useState } from 'react'
+import { twMerge } from 'tailwind-merge'
 
 export default function Header() {
+    const [header, setHeader] = useState(false)
+
+    const scrollHeader = () => {
+        if (window.scrollY >= 145) {
+            setHeader(true)
+        } else {
+            setHeader(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', scrollHeader)
+
+        return () => {
+            window.addEventListener('scroll', scrollHeader)
+        }
+    }, [])
     return (
         <header className="fixed w-full">
-            <div className="flex justify-center bg-zinc-950 py-2 font-sans text-buttered-rum-50">
+            <div
+                className={twMerge('flex justify-center bg-zinc-950 py-2 font-sans text-buttered-rum-50', header ? 'hidden' : '')}
+            >
                 <div className="container flex justify-between text-xs">
                     <div className="flex gap-8">
                         <div className="flex flex-row">
@@ -34,12 +56,17 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center py-4">
+            <div
+                className={twMerge(
+                    'flex justify-center py-4 transition-all',
+                    header ? 'bg-cello-50 text-zinc-900' : 'bg-transparent text-buttered-rum-50'
+                )}
+            >
                 <div className="container flex items-center justify-between">
-                    <Logo className="w-52 fill-white" />
+                    <Logo className={twMerge('w-52', header ? 'fill-zinc-900' : 'fill-white')} />
                     <div className="flex items-center">
                         <nav className="mr-9">
-                            <ul className="flex gap-20 font-sans text-buttered-rum-50">
+                            <ul className="flex gap-20 font-sans">
                                 <NavigationAnchor link="" text="Home" />
                                 <NavigationAnchor link="work-services" text="Serviços" />
                                 <NavigationAnchor link="about" text="Sobre" />
