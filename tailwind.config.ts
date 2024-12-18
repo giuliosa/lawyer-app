@@ -66,6 +66,7 @@ export default {
             'banner-5': "url('/images/banner-5.jpg')",
             'banner-6': "url('/images/banner-6.jpg')",
             'banner-7': "url('/images/banner-7.jpg')",
+            'banner-8': "url('/images/banner-8.jpg')",
             'poster-1': "url('/images/poster-1.jpg')",
             'poster-2': "url('/images/poster-2.jpg')",
             'poster-3': "url('/images/poster-3.jpg')",

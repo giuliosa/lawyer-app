@@ -45,7 +45,7 @@ export default function CardDescription({ description }: CardDescriptionProps) {
                 </p>
                 <a className="px-9 font-sans font-bold uppercase text-buttered-rum-700">{description.ctaText}</a>
             </div>
-            <div className={twMerge('w-1/2 bg-center bg-no-repeat', description.imageClass)}></div>
+            <div className={twMerge('w-1/2 bg-cover bg-center bg-no-repeat', description.imageClass)}></div>
         </section>
     )
 }

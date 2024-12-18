@@ -4,6 +4,9 @@ import WelcomeBanner from './components/home/welcome-banner'
 import Certifications from './components/home/certifications'
 import FieldsOfExpertise from './components/home/fields-of-expertise'
 import Quotes from './components/home/quotes'
+import Professionals from './components/home/professionals'
+import Contact from './components/home/contact-us'
+import Hiring from './components/home/hiring'
 
 export default function Home() {
     const descriptionCard = {
@@ -40,7 +43,10 @@ export default function Home() {
             </section>
             <FieldsOfExpertise />
             <Quotes quote={quote} />
+            <Professionals />
+            <Contact />
             <Certifications />
+            <Hiring />
         </>
     )
 }
